@@ -1,0 +1,6 @@
+---
+- name: start mysql
+  command: service mysql start
+
+- name: restart mysql
+  command: service mysql restart
