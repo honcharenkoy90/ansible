@@ -1,0 +1,6 @@
+---
+- name: start php-fpm
+  command: service php-fpm start
+
+- name: restart php-fpm
+  command: service php-fpm restart

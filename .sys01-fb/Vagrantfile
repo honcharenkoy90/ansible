@@ -1,0 +1,24 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.network "private_network", ip: "10.1.0.101"
+  config.vm.hostname = "srv01web"
+
+#####################################
+#config.vm.provision "shell", inline: <<-SHELL
+#   apt-get -y update
+#   apt-get install -y yum-utils
+#   apt-get install -y device-mapper-persistent-data
+#   apt-get install -y lvm2
+#SHELL
+  
+#####################################
+# Run Ansible from the Vagrant VM
+config.vm.provision "ansible_local" do |ansible|
+  ansible.playbook = "playbook.yml"
+#  ansible.limit = "all"
+#  ansible.sudo= true
+  ansible.install_mode = "pip"
+#  ansible.provisioning_path = ""
+  ansible.verbose = "vvv"
+end
+end

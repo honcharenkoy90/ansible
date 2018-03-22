@@ -1,0 +1,6 @@
+---
+- name: start nginx
+  raw: service nginx start
+
+- name: restart nginx
+  raw: service nginx restart
