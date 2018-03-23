@@ -1,0 +1,8 @@
+---
+- hosts: all
+  sudo: yes
+  
+  roles:
+    - install_docker
+    - config_cont_nginx
+    - config_cont_php
