@@ -3,6 +3,7 @@
   docker_network:
     name: apptier
     connected:
-#          - web
-#          - php
-#          - mysql_db
+          - web
+          - php
+          - mysql_db
+    force: yes
