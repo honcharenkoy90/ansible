@@ -1,0 +1,14 @@
+---
+- name: Create a MySQL container
+  docker_container:
+    user: root
+    name: mysql_db
+    image: mysql
+    state: started
+    hostname: mysql_db
+    volumes:
+      - /data/db
+    env:
+      MYSQL_ROOT_PASSWORD: 12345
+    privileged: true
+

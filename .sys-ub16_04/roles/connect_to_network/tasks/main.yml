@@ -1,0 +1,8 @@
+---
+- name: Create a network
+  docker_network:
+    name: apptier
+    connected:
+#          - web
+#          - php
+#          - mysql_db

@@ -6,3 +6,5 @@
     - install_docker
     - config_cont_nginx
     - config_cont_php
+    - config_cont_mysql
+    - connect_to_network

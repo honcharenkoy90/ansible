@@ -6,10 +6,8 @@
     image: bitnami/php-fpm:latest
     state: started
     hostname: php
-    networks:
-      - app-tier
-    links:
-      - web
+#    networks:
+#      - app-tier
     ports: 
       - 9090:9090
     volumes:

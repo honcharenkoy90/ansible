@@ -18,7 +18,7 @@
       state=present
   
 - name: Install docker-py
-  pip: name=docker-py==1.9 executable=/usr/local/bin/pip
+  pip: name=docker-py state=latest executable=/usr/local/bin/pip
   become: true
 
 - name: configure docker
@@ -31,7 +31,3 @@
   with_items:
     - python-pip
     - python-dev
-
-- name: Create a network
-  docker_network:
-    name: apptier
