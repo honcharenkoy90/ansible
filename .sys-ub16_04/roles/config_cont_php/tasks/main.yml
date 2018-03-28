@@ -3,15 +3,21 @@
   docker_container:
     user: root
     name: php
-    image: bitnami/php-fpm:latest
+    image: wordpress:4.7.1-php7.0-fpm
     state: started
     hostname: php
 #    links:
 #      - web
     ports: 
       - 9090:9000
+      - 80:80
     volumes:
-      - ./code:/code
+      - ./php:/var/www/html
+    env:
+      WORDPRESS_DB_NAME=wpdb
+      WORDPRESS_TABLE_PREFIX=wp_
+      WORDPRESS_DB_HOST=mysql_db
+      WORDPRESS_DB_PASSWORD=12345
     volumes_from:
       - mysql_db
     privileged: true
