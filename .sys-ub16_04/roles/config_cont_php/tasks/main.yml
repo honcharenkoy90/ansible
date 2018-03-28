@@ -6,9 +6,12 @@
     image: bitnami/php-fpm:latest
     state: started
     hostname: php
+#    links:
+#      - web
     ports: 
-      - 9090:9090
+      - 9090:9000
     volumes:
       - ./code:/code
     privileged: true
+#    recreate: yes
     restart: yes

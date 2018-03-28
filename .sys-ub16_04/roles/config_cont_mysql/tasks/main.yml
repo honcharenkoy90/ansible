@@ -6,9 +6,12 @@
     image: mysql
     state: started
     hostname: mysql_db
+    ports:
+      - 3306:3306
     volumes:
       - /data/db
     env:
       MYSQL_ROOT_PASSWORD: 12345
     privileged: true
+    restart: yes
 
