@@ -12,6 +12,8 @@
       - 9090:9000
     volumes:
       - ./code:/code
+    volumes_from:
+      - mysql_db
     privileged: true
 #    recreate: yes
     restart: yes
