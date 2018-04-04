@@ -7,4 +7,6 @@
     - config_cont_nginx
     - config_cont_mysql
     - config_cont_php
+    - monitor_node
+    - monitor_cadvisor
     - connect_to_network

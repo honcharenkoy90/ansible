@@ -13,8 +13,6 @@
 - name: install docker and requirements
   apt: 
       name=docker-ce
-      name=docker
-      update_cache=yes
       state=present
   
 - name: Install docker-py

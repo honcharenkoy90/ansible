@@ -6,4 +6,6 @@
           - web
           - php
           - mysql_db
+          - cadvisor
+          - node-expr
     force: yes

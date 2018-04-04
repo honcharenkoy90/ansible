@@ -9,7 +9,7 @@
 #    links:
 #      - web
     ports: 
-      - 9090:9000
+      - 9000:9000
       - 80:80
     volumes:
       - ./php:/var/www/html
