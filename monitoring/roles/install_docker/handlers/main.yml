@@ -1,0 +1,6 @@
+---
+- name: start docker
+  command: service docker start
+
+- name: restart docker
+  command: service docker restart

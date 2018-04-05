@@ -1,0 +1,12 @@
+---
+- name: Create a Prometheus container
+  docker_container:
+    user: root
+    name: monitor
+    image: prom/prometheus
+    state: started
+    hostname: monitor
+    ports: 
+      - 9090:9090
+    privileged: true
+    restart: yes

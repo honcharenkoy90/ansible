@@ -1,0 +1,10 @@
+---
+- name: Create a network
+  docker_network:
+    name: apptier
+    ipam_options:
+      subnet: 172.2.0.1/16
+      gateway: 172.2.0.1
+    connected:
+          - monitor
+    force: yes
