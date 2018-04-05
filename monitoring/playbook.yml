@@ -1,8 +1,8 @@
 ---
 - hosts: all
-  sudo: yes
+  become: yes
   
   roles:
     - install_docker
-    - config_cont_mntr
+    - config_prom
     - connect_to_network

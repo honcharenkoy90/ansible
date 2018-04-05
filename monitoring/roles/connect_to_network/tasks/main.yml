@@ -6,5 +6,5 @@
       subnet: 172.2.0.1/16
       gateway: 172.2.0.1
     connected:
-          - monitor
+          - prometheus
     force: yes

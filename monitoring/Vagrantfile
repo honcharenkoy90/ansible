@@ -15,9 +15,9 @@ SHELL
 config.vm.provision "ansible_local" do |ansible|
   ansible.playbook = "playbook.yml"
   ansible.limit = "all"
-  ansible.sudo= true
+  ansible.become = true
   ansible.install_mode = "pip"
-  ansible.provisioning_path = ""
+#  ansible.provisioning_path = ""
   ansible.verbose = "vvv"
 end
 end
