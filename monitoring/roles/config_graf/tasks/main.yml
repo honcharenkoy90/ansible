@@ -1,0 +1,17 @@
+---
+- name: Create a Grafana container
+  docker_container:
+    user: root
+    name: grafana
+    image: grafana/grafana
+    state: started
+    hostname: grafana
+    ports: 
+      - 3000:3000
+    env:
+      GF_SECURITY_ADMIN_PASSWORD=123456
+      GF_SECURITY_ADMIN_USER=admin
+    volumes:
+      - /data/monitoring/grafana:/var/lib/grafana
+    privileged: true
+    restart: yes

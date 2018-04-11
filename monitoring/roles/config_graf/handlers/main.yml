@@ -1,0 +1,10 @@
+---
+ 
+- name: start grafana
+
+  command: service grafana start
+
+
+- name: restart grafana
+
+  command: service grafana restart

@@ -1,0 +1,10 @@
+---
+ 
+- name: start alertmanager
+
+  command: service alertmanager start
+
+
+- name: restart alertmanager
+
+  command: service alertmanager restart

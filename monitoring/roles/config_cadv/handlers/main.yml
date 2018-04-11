@@ -1,0 +1,10 @@
+---
+ 
+- name: start cadvisor
+
+  command: service cadvisor start
+
+
+- name: restart cadvisor
+
+  command: service cadvisor restart

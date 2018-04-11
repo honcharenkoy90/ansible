@@ -5,4 +5,8 @@
   roles:
     - install_docker
     - config_prom
+    - config_node-expr
+    - config_graf
+    - config_cadv
+    - config_alert
     - connect_to_network

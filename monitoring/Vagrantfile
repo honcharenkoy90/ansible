@@ -4,11 +4,11 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "srv00mntr"
 
 #####################################
-config.vm.provision "shell", inline: <<-SHELL
-   apt-get -y update
-   apt-get install -y device-mapper-persistent-data
-   apt-get install -y lvm2
-SHELL
+#config.vm.provision "shell", inline: <<-SHELL
+#   apt-get -y update
+#   apt-get install -y device-mapper-persistent-data
+#   apt-get install -y lvm2
+#SHELL
   
 #####################################
 # Run Ansible from the Vagrant VM

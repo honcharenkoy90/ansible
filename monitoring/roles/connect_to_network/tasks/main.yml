@@ -7,4 +7,8 @@
       gateway: 172.2.0.1
     connected:
           - prometheus
+          - node-expr
+          - grafana
+          - cadvisor
+          - alertmanager
     force: yes

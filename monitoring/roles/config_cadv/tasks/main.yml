@@ -1,0 +1,17 @@
+---
+- name: Create a CAdvisor container
+  docker_container:
+    user: root
+    name: cadvisor
+    image: google/cadvisor
+    state: started
+    hostname: cadvisor
+    ports: 
+      - 8080:8080
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    privileged: true
+    restart: yes

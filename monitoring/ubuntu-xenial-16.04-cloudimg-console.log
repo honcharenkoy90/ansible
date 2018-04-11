@@ -692,4 +692,60 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC9ASTb9qDWL41/39lD3V2BQ3aiocRe3EbKeuv7idtn
 
 Ubuntu 16.04.4 LTS ubuntu-xenial ttyS0
 
-ubuntu-xenial login: 
+ubuntu-xenial login: [23273.797960] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[23273.797960]   Tx Queue             <0>
+[23273.797960]   TDH                  <8e>
+[23273.797960]   TDT                  <90>
+[23273.797960]   next_to_use          <90>
+[23273.797960]   next_to_clean        <8e>
+[23273.797960] buffer_info[next_to_clean]
+[23273.797960]   time_stamp           <1005785b1>
+[23273.797960]   next_to_watch        <8f>
+[23273.797960]   jiffies              <1005787f2>
+[23273.797960]   next_to_watch.status <0>
+[23276.071075] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[23276.071075]   Tx Queue             <0>
+[23276.071075]   TDH                  <8e>
+[23276.071075]   TDT                  <90>
+[23276.071075]   next_to_use          <90>
+[23276.071075]   next_to_clean        <8e>
+[23276.071075] buffer_info[next_to_clean]
+[23276.071075]   time_stamp           <1005785b1>
+[23276.071075]   next_to_watch        <8f>
+[23276.071075]   jiffies              <100578a2a>
+[23276.071075]   next_to_watch.status <0>
+[23277.870073] e1000 0000:00:03.0 enp0s3: Reset adapter
+[27834.362416] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[27834.362416]   Tx Queue             <0>
+[27834.362416]   TDH                  <82>
+[27834.362416]   TDT                  <84>
+[27834.362416]   next_to_use          <84>
+[27834.362416]   next_to_clean        <82>
+[27834.362416] buffer_info[next_to_clean]
+[27834.362416]   time_stamp           <10068e9e7>
+[27834.362416]   next_to_watch        <83>
+[27834.362416]   jiffies              <10068ed9f>
+[27834.362416]   next_to_watch.status <0>
+[27836.542175] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[27836.542175]   Tx Queue             <0>
+[27836.542175]   TDH                  <82>
+[27836.542175]   TDT                  <84>
+[27836.542175]   next_to_use          <84>
+[27836.542175]   next_to_clean        <82>
+[27836.542175] buffer_info[next_to_clean]
+[27836.542175]   time_stamp           <10068e9e7>
+[27836.542175]   next_to_watch        <83>
+[27836.542175]   jiffies              <10068efc0>
+[27836.542175]   next_to_watch.status <0>
+[27838.921656] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[27838.921656]   Tx Queue             <0>
+[27838.921656]   TDH                  <82>
+[27838.921656]   TDT                  <84>
+[27838.921656]   next_to_use          <84>
+[27838.921656]   next_to_clean        <82>
+[27838.921656] buffer_info[next_to_clean]
+[27838.921656]   time_stamp           <10068e9e7>
+[27838.921656]   next_to_watch        <83>
+[27838.921656]   jiffies              <10068f213>
+[27838.921656]   next_to_watch.status <0>
+[27839.869406] e1000 0000:00:03.0 enp0s3: Reset adapter

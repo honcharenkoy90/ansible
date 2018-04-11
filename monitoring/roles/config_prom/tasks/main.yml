@@ -9,7 +9,7 @@
     ports: 
       - 9090:9090
     volumes:
-      - /data/monitoring/prometheus-server:/prometheus
+      - /data/monitoring/prometheus:/prometheus
       - ./prometheus:/etc/prometheus
     privileged: true
     restart: yes

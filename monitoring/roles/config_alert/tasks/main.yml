@@ -1,0 +1,17 @@
+---
+- name: Create an Alertmanager container
+  docker_container:
+    user: root
+    name: alertmanager
+    image: prom/alertmanager
+    state: started
+    hostname: alertmanager
+    ports: 
+      - 9093:9093
+    volumes:
+      - ./alertmanager/:/etc/alertmanager/
+    command:
+      - '--config.file=/etc/alertmanager/config.yml'
+      - '--storage.path=/alertmanager'
+    privileged: true
+    restart: yes

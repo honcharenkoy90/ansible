@@ -1,0 +1,20 @@
+global:
+  smtp_smarthost: 'smtp.sendgrid.net:25'
+  smtp_from: 'root@localhost'
+  smtp_auth_username: 'admin'
+  smtp_auth_password: '12345'
+route:
+  group_by: ['alert']
+  group_wait: 30s
+  group_interval: 30s
+  repeat_interval: 1h
+  receiver: jm-alerts
+  routes:
+  - match:
+      job: prometheus
+    receiver: jm-alerts
+    repeat_interval: 1h
+receivers:
+- name: 'jm-alerts'
+  email_configs:
+  - to: 'honcharenkoy90@gmail.com'
