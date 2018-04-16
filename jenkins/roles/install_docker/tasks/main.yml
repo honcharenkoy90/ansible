@@ -1,0 +1,32 @@
+---
+- name: add docker apt key
+  apt_key: >
+    url="https://download.docker.com/linux/ubuntu/gpg"
+    state=present
+
+- name: add docker apt repository
+  apt_repository: >
+    repo="deb https://download.docker.com/linux/ubuntu xenial stable"
+    state=present
+    update_cache=yes
+
+- name: install docker and requirements
+  apt: 
+      update_cache=yes
+      name=docker-ce
+      state=present
+  
+- name: Install docker-py
+  pip: name=docker-py state=latest executable=/usr/local/bin/pip
+  become: true
+
+- name: configure docker
+  copy: content='DOCKER_OPTS=""'
+     dest=/etc/default/docker
+  notify: restart docker
+
+- name: install required python packages for ansible and docker
+  apt: pkg= {{ item }} state=latest
+  with_items:
+    - python-pip
+    - python-dev

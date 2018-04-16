@@ -1,0 +1,10 @@
+---
+ 
+- name: start jenkins
+
+  command: service jenkins start
+
+
+- name: restart jenkins
+
+  command: service jenkins restart

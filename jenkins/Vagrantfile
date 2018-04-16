@@ -1,0 +1,23 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/xenial64"
+  config.vm.network "private_network", ip: "10.1.0.113", guest: 80, host: 50000
+  config.vm.hostname = "srv02ci"
+
+#####################################
+config.vm.provision "shell", inline: <<-SHELL
+   apt-get -y update
+   apt-get install -y apt-utils curl software-properties-common
+   add-apt-repository ppa:ubuntu-toolchain-r/test
+SHELL
+  
+#####################################
+# Run Ansible from the Vagrant VM
+config.vm.provision "ansible_local" do |ansible|
+  ansible.playbook = "playbook.yml"
+  ansible.limit = "all"
+  ansible.become = true
+  ansible.install_mode = "pip"
+#  ansible.provisioning_path = ""
+  ansible.verbose = "vvv"
+end
+end
