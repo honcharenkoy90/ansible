@@ -1,0 +1,2 @@
+Apr 16, 2018 4:36:39 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
