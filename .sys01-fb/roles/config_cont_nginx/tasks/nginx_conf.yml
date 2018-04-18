@@ -1,7 +1,0 @@
-- name: Add NGINX cofig
-  when: nginxinstalled|success
-  template: src=site.conf dest=/etc/nginx/conf.d/site.conf owner=nginx group=nginx
-
-- name: Create Web Root
-  when: nginxinstalled|success
-  file: path=/var/www/html/site mode=775 state=directory owner=nginx group=nginx
