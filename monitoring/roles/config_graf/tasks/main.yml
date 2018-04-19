@@ -9,7 +9,7 @@
     ports: 
       - 3000:3000
     env:
-      GF_SECURITY_ADMIN_PASSWORD=123456
+      GF_SECURITY_ADMIN_PASSWORD=1234567
       GF_SECURITY_ADMIN_USER=admin
     volumes:
       - /data/monitoring/grafana:/var/lib/grafana
