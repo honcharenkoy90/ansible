@@ -1,5 +1,5 @@
 ---
-- name: Create a network and connect conteiners
+- name: Create a network and connect containers
   docker_network:
     name: apptier
     ipam_options:
