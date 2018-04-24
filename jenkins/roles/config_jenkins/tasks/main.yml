@@ -3,7 +3,7 @@
   docker_container:
     user: root
     name: jenkins
-    image: jenkins/jenkins:lts
+#    image: jenkins/jenkins
     state: started
     hostname: jenkins
     ports: 
