@@ -2,9 +2,9 @@
  
 - name: start grafana
 
-  command: service grafana start
+  command: service grafana-server start
 
 
 - name: restart grafana
 
-  command: service grafana restart
+  command: service grafana-server restart
