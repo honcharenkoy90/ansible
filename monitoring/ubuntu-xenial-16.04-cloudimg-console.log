@@ -644,3 +644,26 @@ srv00mntr login: [ 4375.311688] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
 [ 4380.327899]   jiffies              <1000f79d1>
 [ 4380.327899]   next_to_watch.status <0>
 [ 4381.235113] e1000 0000:00:03.0 enp0s3: Reset adapter
+[26859.361924] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[26859.361924]   Tx Queue             <0>
+[26859.361924]   TDH                  <e3>
+[26859.361924]   TDT                  <e5>
+[26859.361924]   next_to_use          <e5>
+[26859.361924]   next_to_clean        <e3>
+[26859.361924] buffer_info[next_to_clean]
+[26859.361924]   time_stamp           <100653680>
+[26859.361924]   next_to_watch        <e4>
+[26859.361924]   jiffies              <100653a19>
+[26859.361924]   next_to_watch.status <0>
+[26861.469772] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[26861.469772]   Tx Queue             <0>
+[26861.469772]   TDH                  <e3>
+[26861.469772]   TDT                  <e5>
+[26861.469772]   next_to_use          <e5>
+[26861.469772]   next_to_clean        <e3>
+[26861.469772] buffer_info[next_to_clean]
+[26861.469772]   time_stamp           <100653680>
+[26861.469772]   next_to_watch        <e4>
+[26861.469772]   jiffies              <100653c28>
+[26861.469772]   next_to_watch.status <0>
+[26863.135106] e1000 0000:00:03.0 enp0s3: Reset adapter
