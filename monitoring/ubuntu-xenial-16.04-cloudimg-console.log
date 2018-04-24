@@ -610,4 +610,37 @@ ci-info: |   2   |   10.1.0.0  | 0.0.0.0  | 255.255.255.0 |   enp0s8  |   U   |
 
 Ubuntu 16.04.4 LTS srv00mntr ttyS0
 
-srv00mntr login: 
+srv00mntr login: [ 4375.311688] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[ 4375.311688]   Tx Queue             <0>
+[ 4375.311688]   TDH                  <31>
+[ 4375.311688]   TDT                  <33>
+[ 4375.311688]   next_to_use          <33>
+[ 4375.311688]   next_to_clean        <31>
+[ 4375.311688] buffer_info[next_to_clean]
+[ 4375.311688]   time_stamp           <1000f716e>
+[ 4375.311688]   next_to_watch        <32>
+[ 4375.311688]   jiffies              <1000f74eb>
+[ 4375.311688]   next_to_watch.status <0>
+[ 4377.867288] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[ 4377.867288]   Tx Queue             <0>
+[ 4377.867288]   TDH                  <31>
+[ 4377.867288]   TDT                  <33>
+[ 4377.867288]   next_to_use          <33>
+[ 4377.867288]   next_to_clean        <31>
+[ 4377.867288] buffer_info[next_to_clean]
+[ 4377.867288]   time_stamp           <1000f716e>
+[ 4377.867288]   next_to_watch        <32>
+[ 4377.867288]   jiffies              <1000f776a>
+[ 4377.867288]   next_to_watch.status <0>
+[ 4380.327899] e1000 0000:00:03.0 enp0s3: Detected Tx Unit Hang
+[ 4380.327899]   Tx Queue             <0>
+[ 4380.327899]   TDH                  <31>
+[ 4380.327899]   TDT                  <33>
+[ 4380.327899]   next_to_use          <33>
+[ 4380.327899]   next_to_clean        <31>
+[ 4380.327899] buffer_info[next_to_clean]
+[ 4380.327899]   time_stamp           <1000f716e>
+[ 4380.327899]   next_to_watch        <32>
+[ 4380.327899]   jiffies              <1000f79d1>
+[ 4380.327899]   next_to_watch.status <0>
+[ 4381.235113] e1000 0000:00:03.0 enp0s3: Reset adapter
