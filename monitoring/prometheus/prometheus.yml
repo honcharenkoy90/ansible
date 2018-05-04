@@ -32,6 +32,18 @@ scrape_configs:
         - 10.1.0.111:8081
         labels:
           name: client-cAdvisor
+
+  - job_name: 'jenkins-server-monitoring'
+    static_configs:
+      - targets:
+        - 10.1.0.113:9100
+        labels:
+          name: jenkins-node-exporter
+      - targets:
+        - 10.1.0.113:8081
+        labels:
+          name: jenkins-cAdvisor
+
 alerting:
   alertmanagers:
     - static_configs:

@@ -10,7 +10,7 @@ groups:
       summary: "Instance {{ $labels.instance }} under high load"
       description: "{{ $labels.instance }} of job {{ $labels.job }} is under high load."
 
-- name: web client
+- name: web instance down
   rules:
   - alert: ClientInstanceDown
     expr: up{job="prometheus-client"} == 0

@@ -1,0 +1,10 @@
+---
+
+- name: start node-exporter
+
+  command: service node-exporter start
+
+
+- name: restart node-exporter
+
+  command: service node-exporter restart

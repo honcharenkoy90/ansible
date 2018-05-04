@@ -7,4 +7,6 @@
       gateway: 172.2.0.1
     connected:
           - jenkins
+          - jcadvisor
+          - jnode-expr
     force: yes
