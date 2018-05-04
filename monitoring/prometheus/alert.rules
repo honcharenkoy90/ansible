@@ -2,8 +2,8 @@ groups:
 - name: high load node
   rules:
   - alert: high_load
-    expr: node_load1 > 10.0
-    for: 5s
+    expr: node_load1 > 0.0
+    for: 1s
     labels:
       severity: page
     annotations:
@@ -18,3 +18,14 @@ groups:
     annotations:
       summary: "Instance {{ $labels.instance }} is down"
       description: "{{ $labels.instance }} of job {{ $labels.job }} is down."
+
+- name: jenkins instance down
+  rules:
+  - alert: ClientInstanceDown
+    expr: up{job="jenkins-server-monitoring"} == 0
+    for: 10s
+    annotations:
+      summary: "Instance {{ $labels.instance }} is down"
+      description: "{{ $labels.instance }} of job {{ $labels.job }} is down."
+
+
