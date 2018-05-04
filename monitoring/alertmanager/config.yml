@@ -13,7 +13,7 @@ route:
   routes:
   - match:
       job: prometheus
-    receiver: jm-alerts
+    receiver: prometheus-alerts
     repeat_interval: 1h
 receivers:
 - name: 'prometheus-alerts'
