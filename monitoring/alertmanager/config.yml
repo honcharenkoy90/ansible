@@ -18,6 +18,6 @@ route:
 receivers:
 - name: 'prometheus-alerts'
   email_configs:
-  - to: 'dk-fan90@i.ua'
+  - to: 'dk-fan@i.ua'
     send_resolved: true
     require_tls: false
