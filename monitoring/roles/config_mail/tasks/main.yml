@@ -1,0 +1,15 @@
+---
+- name: Create SMTP container
+  docker_container:
+    user: root
+    name: smtp
+    image: namshi/smtp
+    state: started
+    hostname: smtp
+    ports: 
+      - 25:25
+    env:
+      GMAIL_USER: nmumoodle@gmail.com
+      GMAIL_PASSWORD: shade2987
+    privileged: true
+    restart: yes

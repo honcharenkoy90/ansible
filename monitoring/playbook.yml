@@ -9,4 +9,5 @@
     - config_graf
     - config_cadv
     - config_alert
+    - config_mail
     - connect_to_network

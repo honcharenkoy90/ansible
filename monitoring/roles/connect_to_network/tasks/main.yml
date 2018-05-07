@@ -11,4 +11,5 @@
           - grafana
           - cadvisor
           - alertmanager
+          - smtp
     force: yes

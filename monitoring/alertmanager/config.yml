@@ -1,7 +1,7 @@
 global:
-  smtp_smarthost: 'localhost:25'
-  smtp_from: 'root@localhost'
-  smtp_auth_username: 'admin@localhost'
+  smtp_smarthost: 'smtp:25'
+  smtp_from: 'root@smtp'
+  smtp_auth_username: 'admin@smtp'
   smtp_auth_password: '12345'
   smtp_require_tls: false
 route:
