@@ -2,8 +2,8 @@ groups:
 - name: high load node
   rules:
   - alert: high_load
-    expr: node_load1 > 0.0
-    for: 3s
+    expr: node_load1 > 50.0
+    for: 30s
     labels:
       severity: page
     annotations:

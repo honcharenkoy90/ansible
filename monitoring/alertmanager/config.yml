@@ -1,8 +1,8 @@
 global:
-  smtp_smarthost: 'smtp:25'
-  smtp_from: 'root@smtp'
-  smtp_auth_username: 'admin@smtp'
-  smtp_auth_password: '12345'
+  smtp_smarthost: 'smtp.gmail.com:25'
+  smtp_from: 'Yurii, nmumoodle@gmail.com'
+  smtp_auth_username: 'nmumoodle@gmail.com'
+  smtp_auth_password: 'shade2987'
   smtp_require_tls: false
 route:
   group_by: ['alert']
@@ -18,6 +18,6 @@ route:
 receivers:
 - name: 'prometheus-alerts'
   email_configs:
-  - to: 'dk-fan@i.ua'
+  - to: 'honcharenkoy90@gmail.com'
     send_resolved: true
     require_tls: false
