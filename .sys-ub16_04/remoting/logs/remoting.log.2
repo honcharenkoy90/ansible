@@ -1,2 +1,36 @@
-Apr 24, 2018 11:03:47 AM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+May 02, 2018 4:09:07 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
 INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+May 04, 2018 3:13:22 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Master isn't ready to talk to us on http://10.1.0.113:8080/tcpSlaveAgentListener/. Will try again: response code=503
+May 04, 2018 3:13:32 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+May 04, 2018 3:15:58 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Master isn't ready to talk to us on http://10.1.0.113:8080/tcpSlaveAgentListener/. Will try again: response code=503
+May 04, 2018 3:16:08 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+May 04, 2018 3:25:41 PM org.jvnet.winp.Native loadByUrl
+WARNING: Failed to load DLL from static location
+java.lang.UnsatisfiedLinkError: Native Library C:\Users\Yurii_Honcharenko\ansible\.sys-ub16_04\remoting\jarCache\8D\winp.x64.59DDBA6E777434D039AE09539E6AE899.dll already loaded in another classloader
+	at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+	at java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.lang.Runtime.load0(Unknown Source)
+	at java.lang.System.load(Unknown Source)
+	at org.jvnet.winp.Native.loadDll(Native.java:199)
+	at org.jvnet.winp.Native.loadByUrl(Native.java:130)
+	at org.jvnet.winp.Native.load(Native.java:99)
+	at org.jvnet.winp.Native.<clinit>(Native.java:70)
+	at org.jvnet.winp.WinProcess.enableDebugPrivilege(WinProcess.java:226)
+	at hudson.util.ProcessTree$Windows.<clinit>(ProcessTree.java:555)
+	at hudson.util.ProcessTree.get(ProcessTree.java:350)
+	at hudson.Launcher$RemoteLauncher$KillTask.call(Launcher.java:1090)
+	at hudson.Launcher$RemoteLauncher$KillTask.call(Launcher.java:1081)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:210)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:53)
+	at hudson.remoting.Request$2.run(Request.java:364)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at hudson.remoting.Engine$1$1.run(Engine.java:94)
+	at java.lang.Thread.run(Unknown Source)
+
